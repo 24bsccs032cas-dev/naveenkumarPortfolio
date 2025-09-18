@@ -1,111 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Portfolio - Naveen Kumar P</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #fafafa;
-      color: #222;
-      line-height: 1.6;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Naveen Kumar - Portfolio</title>
+<style>
+  /* Reset some default styles */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #007acc;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+
+  nav {
+    background: #005fa3;
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #ffdd57;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+  }
+
+  section h2 {
+    border-bottom: 3px solid #007acc;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    color: #007acc;
+  }
+
+  /* About me */
+  #about p {
+    font-size: 1.1rem;
+    max-width: 700px;
+  }
+
+  /* Skills */
+  #skills ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #skills ul li {
+    background: #007acc;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+
+  /* Projects */
+  #projects .project {
+    background: #e8f1fb;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+  }
+
+  #projects .project h3 {
+    margin-bottom: 0.4rem;
+    color: #005fa3;
+  }
+
+  #projects .project p {
+    font-size: 0.95rem;
+  }
+
+  #projects .project a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  #projects .project a:hover {
+    text-decoration: underline;
+  }
+
+  /* Contact */
+  #contact form {
+    max-width: 600px;
+  }
+
+  #contact label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+  }
+
+  #contact input,
+  #contact textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+  }
+
+  #contact button {
+    background: #007acc;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+
+  #contact button:hover {
+    background: #005fa3;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #007acc;
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
     }
-    header, footer {
-      text-align: center;
-      padding: 20px 0;
-      background-color: #004080;
-      color: white;
-      border-radius: 8px;
-      margin-bottom: 30px;
+
+    nav a {
+      margin: 0.5rem 0;
     }
-    h1 {
-      margin: 0;
+
+    main {
+      margin: 1rem;
+      padding: 1rem;
     }
-    section {
-      margin-bottom: 40px;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #004080;
-      border-bottom: 2px solid #004080;
-      padding-bottom: 8px;
-      margin-bottom: 15px;
-    }
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
-    }
-    a {
-      color: #004080;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
 <header>
-  <h1>Naveen Kumar P - Portfolio</h1>
-  <p>Web Developer | Tech Enthusiast | Problem Solver</p>
+  <h1>Naveen Kumar</h1>
+  <p>Web Developer | Frontend Enthusiast | Problem Solver</p>
 </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>Hello! I'm Naveen Kumar P, a passionate web developer with experience in building responsive and user-friendly websites and applications. I love coding, learning new technologies, and creating solutions that make life easier.</p>
-</section>
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>HTML5, CSS3, JavaScript (ES6+)</li>
-    <li>React.js, Vue.js</li>
-    <li>Node.js, Express.js</li>
-    <li>Python & Django</li>
-    <li>Version control with Git & GitHub</li>
-    <li>Responsive Web Design & Accessibility</li>
-  </ul>
-</section>
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Naveen Kumar, a passionate web developer with experience in building dynamic and responsive websites using HTML, CSS, and JavaScript. I enjoy turning ideas into real-world projects and constantly learning new technologies to improve my skills.</p>
+  </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Portfolio Website:</strong> A personal portfolio built with React showcasing my projects and skills.</li>
-    <li><strong>E-commerce Platform:</strong> Developed a full-stack online store with Node.js backend and React frontend.</li>
-    <li><strong>Blog Platform:</strong> Created a blogging website using Django with rich text editing and user authentication.</li>
-  </ul>
-</section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript (ES6+)</li>
+      <li>Responsive Design</li>
+      <li>Git & GitHub</li>
+      <li>Basic Node.js</li>
+      <li>Debugging & Testing</li>
+    </ul>
+  </section>
 
-<section id="experience">
-  <h2>Experience</h2>
-  <ul>
-    <li><strong>Junior Web Developer</strong> at Tech Solutions (2023 - Present)<br />Worked on frontend development, improving website UI and UX, and collaborating with backend teams.</li>
-    <li><strong>Intern</strong> at WebStart (2022)<br />Assisted in building responsive websites and learned agile development practices.</li>
-  </ul>
-</section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio website built using pure HTML, CSS, and JavaScript to showcase my projects and skills.</p>
+      <a href="#" target="_blank" rel="noopener">View Project</a>
+    </div>
+    <div class="project">
+      <h3>ToDo List App</h3>
+      <p>A simple ToDo list application with task add, delete, and mark complete functionalities.</p>
+      <a href="#" target="_blank" rel="noopener">View Project</a>
+    </div>
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>A weather forecast app fetching real-time data from a public API with dynamic UI updates.</p>
+      <a href="#" target="_blank" rel="noopener">View Project</a>
+    </div>
+  </section>
 
-<section id="education">
-  <h2>Education</h2>
-  <p>Bachelor of Computer Science, XYZ University (2019 - 2023)</p>
-</section>
-
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:naveenkumar@example.com">naveenkumar@example.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/naveenkumar" target="_blank" rel="noopener noreferrer">linkedin.com/in/naveenkumar</a></p>
-  <p>GitHub: <a href="https://github.com/naveenkumar" target="_blank" rel="noopener noreferrer">github.com/naveenkumar</a></p>
-</section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" onsubmit="handleSubmit(event)">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required />
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required />
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
 
 <footer>
-  &copy; 2025 Naveen Kumar P. All rights reserved.
+  &copy; 2025 Naveen Kumar. All rights reserved.
 </footer>
+
+<script>
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    const name = event.target.name.value.trim();
+    const email = event.target.email.value.trim();
+    const message = event.target.message.value.trim();
+
+    if(name && email && message) {
+      alert(`Thank you, ${name}! Your message has been received.`);
+      event.target.reset();
+    } else {
+      alert('Please fill in all fields.');
+    }
+  }
+</script>
 
 </body>
 </html>
+
