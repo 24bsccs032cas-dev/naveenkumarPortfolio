@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio - Naveen Kumar P</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fafafa;
+      color: #222;
+      line-height: 1.6;
+    }
+    header, footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #004080;
+      color: white;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      margin: 0;
+    }
+    section {
+      margin-bottom: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #004080;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    a {
+      color: #004080;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Naveen Kumar P - Portfolio</h1>
+  <p>Web Developer | Tech Enthusiast | Problem Solver</p>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm Naveen Kumar P, a passionate web developer with experience in building responsive and user-friendly websites and applications. I love coding, learning new technologies, and creating solutions that make life easier.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML5, CSS3, JavaScript (ES6+)</li>
+    <li>React.js, Vue.js</li>
+    <li>Node.js, Express.js</li>
+    <li>Python & Django</li>
+    <li>Version control with Git & GitHub</li>
+    <li>Responsive Web Design & Accessibility</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>Portfolio Website:</strong> A personal portfolio built with React showcasing my projects and skills.</li>
+    <li><strong>E-commerce Platform:</strong> Developed a full-stack online store with Node.js backend and React frontend.</li>
+    <li><strong>Blog Platform:</strong> Created a blogging website using Django with rich text editing and user authentication.</li>
+  </ul>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <ul>
+    <li><strong>Junior Web Developer</strong> at Tech Solutions (2023 - Present)<br />Worked on frontend development, improving website UI and UX, and collaborating with backend teams.</li>
+    <li><strong>Intern</strong> at WebStart (2022)<br />Assisted in building responsive websites and learned agile development practices.</li>
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <p>Bachelor of Computer Science, XYZ University (2019 - 2023)</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:naveenkumar@example.com">naveenkumar@example.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/naveenkumar" target="_blank" rel="noopener noreferrer">linkedin.com/in/naveenkumar</a></p>
+  <p>GitHub: <a href="https://github.com/naveenkumar" target="_blank" rel="noopener noreferrer">github.com/naveenkumar</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Naveen Kumar P. All rights reserved.
+</footer>
+
+</body>
+</html>
